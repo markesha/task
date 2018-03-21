@@ -9,7 +9,7 @@ terraform {
 }
 
 module "vpc" {
-  source = "git::git@github.com:markesha/tf-modules.git//vpc?ref=0.0.3"
+  source = "github.com/markesha/tf-modules/vpc"
 
   cidr_block = "10.0.0.6/24"
 }
