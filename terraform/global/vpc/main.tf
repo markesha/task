@@ -11,7 +11,7 @@ terraform {
   }
 }
 
-resource "aws_vpc" "${var.env}-vpc" {
+resource "aws_vpc" "vpc" {
   cidr_block = "${var.range}"
 
   tags {
