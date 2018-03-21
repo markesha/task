@@ -11,5 +11,5 @@ terraform {
 module "vpc" {
   source = "github.com/markesha/tf-modules/vpc"
 
-  cidr_block = "10.0.0.6/24"
+  cidr_block = "10.0.6.0/24"
 }
