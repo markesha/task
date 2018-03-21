@@ -4,9 +4,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-state-for-${var.env}-env"
-    region = "${var.region}"
-    key = "${var.env}/global/vpc/terraform.tfstate"
+    bucket = "terraform-state-for-dev-env"
+    region = "eu-central-1"
+    key = "dev/global/vpc/terraform.tfstate"
     encrypt = true
   }
 }
