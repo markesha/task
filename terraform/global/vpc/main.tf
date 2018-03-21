@@ -12,5 +12,5 @@ module "vpc" {
   source = "github.com/markesha/tf-modules/vpc"
 
   cidr_block = "10.0.6.0/24"
-  env = "${var.env}"
+  env = "prod"
 }
